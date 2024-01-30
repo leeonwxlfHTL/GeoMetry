@@ -52,7 +52,7 @@ public class Group {
 		Shape biggestShape = null;
 		for (Shape s : shapes) {
 			double current = s.calculateArea();
-			if (current > biggestShape.calculateArea()) {
+			if (current > biggestShape.calculateArea() || biggestShape == null) {
 				biggestShape = s;
 			}
 
