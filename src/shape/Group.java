@@ -3,8 +3,25 @@ package shape;
 import java.util.ArrayList;
 
 public class Group {
-
+	
 	private ArrayList<Shape> shapes;
+
+	public Group() {
+		super();
+		shapes = new ArrayList<Shape>();
+	}
+	
+
+	public void addShape(Shape shape) {
+		if(!this.shapes.contains(shape)) {
+			this.shapes.add(shape);
+		}
+	}
+	
+	public void removeShape(Shape shape) {
+		this.removeShape(shape);
+	}
+	
 
 	public double calculateAllArea() {
 		double sum = 0;
