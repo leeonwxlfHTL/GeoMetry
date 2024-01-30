@@ -1,10 +1,10 @@
 package shape;
 
 public abstract class Shape {
-	
+
 	private double xCoords;
 	private double yCoords;
-	
+
 	public Shape(double xCoords, double yCoords) {
 		super();
 		this.xCoords = xCoords;
@@ -26,13 +26,9 @@ public abstract class Shape {
 	public void setyCoords(double yCoords) {
 		this.yCoords = yCoords;
 	}
-	
-	
 
-	
 	public abstract double calculateCircumference();
-	
+
 	public abstract double calculateArea();
 
-	
 }
